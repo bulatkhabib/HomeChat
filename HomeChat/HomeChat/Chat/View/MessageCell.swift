@@ -9,6 +9,8 @@ import UIKit
 
 class MessageCell: UITableViewCell {
     
+    // MARK: Private properties
+    
     private let messageView: UIView = {
         let view = UIView()
         view.layer.cornerRadius = 12
@@ -32,6 +34,9 @@ class MessageCell: UITableViewCell {
     
     private var trailingConstraint: NSLayoutConstraint!
     private var leadingConstraint: NSLayoutConstraint!
+    
+    
+    // MARK: Private
     
     private func messageLeftConstraint() {
         messageTextLabel.textColor = UIColor(named: "leftMessageColor")
@@ -107,6 +112,8 @@ class MessageCell: UITableViewCell {
         trailingConstraint = self.trailingAnchor.constraint(equalTo: messageTextLabel.trailingAnchor, constant: 28)
         trailingConstraint.isActive = true
     }
+    
+    //MARK: Initilization
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

@@ -9,6 +9,8 @@ import UIKit
 
 class ChatViewController: UIViewController {
     
+    // MARK: Private properties
+    
     private let tableView = UITableView()
     private let messageCellIdentifier = "messageCellIdentifier"
     private let writingTextFieldView = UIView()
@@ -52,13 +54,17 @@ class ChatViewController: UIViewController {
         return button
     }()
     
+    //MARK: Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        navigationItem.title = "Messages"
+        navigationItem.title = "Jessica Thopmson"
         setupWritingTextField()
         setupTableView()
     }
+    
+    // MARK: Private
     
     private func setupWritingTextField() {
         view.addSubview(writingTextFieldView)
@@ -141,6 +147,8 @@ class ChatViewController: UIViewController {
         }
     }
 }
+
+// MARK: Extension
 
 extension ChatViewController: UITableViewDelegate, UITableViewDataSource {
     

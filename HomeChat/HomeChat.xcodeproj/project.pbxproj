@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		9E3CA9092730053A005501C1 /* Habibi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E3CA9082730053A005501C1 /* Habibi-Regular.ttf */; };
 		9E3CA90B2730087F005501C1 /* ExpandedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3CA90A2730087F005501C1 /* ExpandedTextField.swift */; };
+		9ED2515F2747CB1900F56196 /* ChatsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED2515E2747CB1900F56196 /* ChatsListController.swift */; };
+		9ED251612747CC4E00F56196 /* ChatListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED251602747CC4E00F56196 /* ChatListModel.swift */; };
+		9ED251632747F14C00F56196 /* ChatCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED251622747F14C00F56196 /* ChatCellView.swift */; };
 		9EEBAF67271430F700DE23ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEBAF66271430F700DE23ED /* AppDelegate.swift */; };
 		9EEBAF69271430F700DE23ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEBAF68271430F700DE23ED /* SceneDelegate.swift */; };
 		9EEBAF6B271430F700DE23ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEBAF6A271430F700DE23ED /* ViewController.swift */; };
@@ -24,6 +27,9 @@
 /* Begin PBXFileReference section */
 		9E3CA9082730053A005501C1 /* Habibi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Habibi-Regular.ttf"; sourceTree = "<group>"; };
 		9E3CA90A2730087F005501C1 /* ExpandedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedTextField.swift; sourceTree = "<group>"; };
+		9ED2515E2747CB1900F56196 /* ChatsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsListController.swift; sourceTree = "<group>"; };
+		9ED251602747CC4E00F56196 /* ChatListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListModel.swift; sourceTree = "<group>"; };
+		9ED251622747F14C00F56196 /* ChatCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCellView.swift; sourceTree = "<group>"; };
 		9EEBAF63271430F700DE23ED /* HomeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EEBAF66271430F700DE23ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EEBAF68271430F700DE23ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +63,32 @@
 			path = CustomFonts;
 			sourceTree = "<group>";
 		};
+		9ED2515B2747CA9700F56196 /* ChatsList */ = {
+			isa = PBXGroup;
+			children = (
+				9ED2515D2747CAE900F56196 /* View */,
+				9ED2515C2747CAD900F56196 /* Model */,
+				9ED2515E2747CB1900F56196 /* ChatsListController.swift */,
+			);
+			path = ChatsList;
+			sourceTree = "<group>";
+		};
+		9ED2515C2747CAD900F56196 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9ED251602747CC4E00F56196 /* ChatListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9ED2515D2747CAE900F56196 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9ED251622747F14C00F56196 /* ChatCellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9EEBAF5A271430F700DE23ED = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +109,7 @@
 		9EEBAF65271430F700DE23ED /* HomeChat */ = {
 			isa = PBXGroup;
 			children = (
+				9ED2515B2747CA9700F56196 /* ChatsList */,
 				9EEBAF7B2714328600DE23ED /* Chat */,
 				9EEBAF66271430F700DE23ED /* AppDelegate.swift */,
 				9EEBAF68271430F700DE23ED /* SceneDelegate.swift */,
@@ -197,10 +230,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ED251632747F14C00F56196 /* ChatCellView.swift in Sources */,
 				9EEBAF6B271430F700DE23ED /* ViewController.swift in Sources */,
 				9EEBAF83271438F600DE23ED /* MessageModel.swift in Sources */,
+				9ED2515F2747CB1900F56196 /* ChatsListController.swift in Sources */,
 				9EEBAF862714A71E00DE23ED /* DateHeader.swift in Sources */,
 				9E3CA90B2730087F005501C1 /* ExpandedTextField.swift in Sources */,
+				9ED251612747CC4E00F56196 /* ChatListModel.swift in Sources */,
 				9EEBAF802714378C00DE23ED /* MessageCell.swift in Sources */,
 				9EEBAF67271430F700DE23ED /* AppDelegate.swift in Sources */,
 				9EEBAF7D2714342F00DE23ED /* ChatViewController.swift in Sources */,

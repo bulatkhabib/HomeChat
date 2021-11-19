@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         
-        let vc = ChatViewController()
+        let vc = ChatsListController()
         
         let navigationController = UINavigationController(rootViewController: vc)
         
@@ -31,8 +31,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                                                      .foregroundColor: UIColor.label]
         navBarAppearance.titleTextAttributes = [.font: UIFontMetrics(forTextStyle: .body).scaledFont(for:   UIFont(name: "Habibi-Regular", size: 17)!),
                                                 .foregroundColor: UIColor.label]
-        navBarAppearance.setBackIndicatorImage(UIImage(named: "back_icon"),
-                                               transitionMaskImage: UIImage(named: "back_icon"))
+        navBarAppearance.setBackIndicatorImage(UIImage(named: "Back Icon"),
+                                               transitionMaskImage: UIImage(named: "Back Icon"))
         navigationController.navigationBar.standardAppearance = navBarAppearance
         navigationController.navigationBar.scrollEdgeAppearance = navBarAppearance
         
