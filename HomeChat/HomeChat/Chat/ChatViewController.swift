@@ -60,6 +60,7 @@ class ChatViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         navigationItem.title = "Jessica Thopmson"
+        navigationItem.backButtonTitle = ""
         setupWritingTextField()
         setupTableView()
     }

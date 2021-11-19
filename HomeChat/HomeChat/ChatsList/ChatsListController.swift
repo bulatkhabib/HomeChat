@@ -61,7 +61,8 @@ class ChatsListController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.backButtonTitle = ""
+        navigationController?.navigationBar.tintColor = .black
         tableView.delegate = self
         tableView.dataSource = self
         setupTableView()
